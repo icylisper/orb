@@ -1,0 +1,32 @@
+[
+
+  {
+    "id": "extract_tax_paid",
+    "kind": "function",
+    "rules": "examples/tax/extract_tax_paid.js",
+    "inputs": ["amount"],
+    "outputs": ["bracket.single", "state"],
+    "sources": ["request"],
+    "targets": ["state_taxes"]
+  },
+
+  {
+    "id": "state_taxes",
+    "kind": "table",
+    "rules": "examples/tax/state_taxes.csv",
+    "inputs": ["bracket.single", "state"],
+    "outputs": ["rate.single"],
+    "sources": ["extract_tax_paid"],
+    "targets": ["verify"]
+  },
+
+  {
+    "id": "verify",
+    "kind": "expression",
+    "rules": "rate.single == 1",
+    "inputs": ["rate.single"],
+    "sources": ["state_taxes"],
+    "targets": ["response"]
+  }
+
+]

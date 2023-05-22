@@ -1,0 +1,5 @@
+company.turnover,flag.turnover
+> 1_000_000,"""green"""
+[200_000..1_000_000],"""amber"""
+< 200_000,"""red"""
+,"""red"""

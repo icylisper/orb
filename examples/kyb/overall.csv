@@ -1,0 +1,5 @@
+red,amber,green,critical,overall
+,,,> 0,"""red"""
+> 0,,,,"""red"""
+,> 1,,,"""amber"""
+,,,,"""green"""

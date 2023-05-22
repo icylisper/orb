@@ -1,0 +1,4 @@
+company.country,company.isEu,flag.country
+"""US"",""IE"",""GB"",""CA""",,"""green"""
+,TRUE,"""amber"""
+,,"""red"""

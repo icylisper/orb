@@ -1,0 +1,31 @@
+[
+  {
+    "id": "fees",
+    "kind": "table",
+    "rules": "examples/shipping/fees.csv",
+    "inputs": ["cart.total", "customer.country", "customer.tier"],
+    "outputs": ["fees.flat", "fees.percent"],
+    "sources": ["request"],
+    "targets": ["adjust"]
+  },
+
+  {
+    "id": "adjust",
+    "kind": "expression",
+    "rules": "fees.flat + 1",
+    "inputs": ["fees.flat"],
+    "outputs": ["fees.flat"],
+    "sources": ["fees"],
+    "targets": ["verify", "response"]
+  },
+
+  {
+    "id": "verify",
+    "kind": "function",
+    "rules": "examples/shipping/verify.js",
+    "inputs": ["fees.percent"],
+    "sources": ["adjust"],
+    "targets": ["response"]
+  }
+
+]

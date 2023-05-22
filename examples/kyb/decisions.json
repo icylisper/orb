@@ -1,0 +1,53 @@
+[
+  {
+    "id": "company_type",
+    "kind": "table",
+    "rules": "examples/kyb/company_type.csv",
+    "inputs": ["company.type", "flag.companyType"],
+    "outputs": ["flag.companyType"],
+    "sources": ["request"],
+    "targets": ["overall_mapper"]
+  },
+
+
+  {
+    "id": "turnover",
+    "kind": "table",
+    "rules": "examples/kyb/turnover.csv",
+    "inputs": ["company.turnover"],
+    "outputs": ["flag.turnover"],
+    "sources": ["request"],
+    "targets": ["overall_mapper"]
+  },
+
+  {
+    "id": "country",
+    "kind": "table",
+    "rules": "examples/kyb/country.csv",
+    "inputs": ["company.country", "company.isEu"],
+    "outputs": ["flag.country"],
+    "sources": ["request"],
+    "targets": ["overall_mapper"]
+  },
+
+
+  {
+    "id": "overall_mapper",
+    "kind": "function",
+    "rules": "examples/kyb/mapper.js",
+    "sources": ["country", "turnover", "company_type"],
+    "targets": ["overall"]
+  },
+
+
+  {
+    "id": "overall",
+    "kind": "table",
+    "rules": "examples/kyb/overall.csv",
+    "inputs": ["red", "amber", "green", "critical"],
+    "outputs": ["overall"],
+    "sources": ["overall_mapper"],
+    "targets": ["response"]
+  }
+
+]

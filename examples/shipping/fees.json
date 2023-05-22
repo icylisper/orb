@@ -1,0 +1,65 @@
+[
+  {
+    "cart.total": "> 1000",
+    "customer.country": "\"US\"",
+    "fees.flat": "",
+    "fees.percent": "2",
+    "customer.tier": "\"gold\""
+  },
+  {
+    "customer.country": "\"US\"",
+    "fees.percent": "3",
+    "cart.total": "> 1000",
+    "customer.tier": "",
+    "fees.flat": ""
+  },
+  {
+    "fees.percent": "",
+    "customer.country": "\"US\"",
+    "cart.total": "",
+    "fees.flat": "25",
+    "customer.tier": ""
+  },
+  {
+    "cart.total": "> 1000",
+    "fees.percent": "5",
+    "customer.country": "\"CA\",\"MX\"",
+    "customer.tier": "",
+    "fees.flat": ""
+  },
+  {
+    "customer.tier": "",
+    "customer.country": "\"CA\",\"MX\"",
+    "cart.total": "",
+    "fees.flat": "50",
+    "fees.percent": ""
+  },
+  {
+    "fees.percent": "10",
+    "fees.flat": "",
+    "customer.country": "\"IE\",\"UK\",\"FR\",\"DE\"",
+    "customer.tier": "",
+    "cart.total": "> 1000"
+  },
+  {
+    "customer.tier": "",
+    "customer.country": "\"IE\",\"UK\",\"FR\",\"DE\"",
+    "fees.percent": "",
+    "cart.total": "",
+    "fees.flat": "100"
+  },
+  {
+    "fees.flat": "",
+    "customer.country": "",
+    "cart.total": "> 1000",
+    "customer.tier": "",
+    "fees.percent": "15"
+  },
+  {
+    "cart.total": "",
+    "customer.tier": "",
+    "customer.country": "",
+    "fees.flat": "150",
+    "fees.percent": ""
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "cart": {
+    "total": 800
+  },
+  "customer": {
+    "country": "US",
+    "tier": "gold"
+  }
+}
