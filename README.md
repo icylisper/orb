@@ -127,7 +127,7 @@ Alternatively, download a compiled native binary:
 
 | GNU/Linux x86                                                                   | MacOSX M1/M2                                                       | MacOSX x86                                                                      |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [0.1.1](https://github.com/icylisper/orb/releases/download/0.1.1/orb-x86_64-linux) | [0.1.1](https://github.com/icylisper/orb/releases/download/0.1.1/orb-mac) |  |
+| [0.1.1](https://github.com/icylisper/orb/releases/download/0.1.1/orb-x86_64-linux)  |  | [0.1.1](https://github.com/icylisper/orb/releases/download/0.1.1/orb-x86_64-apple) |
 
 ### Credits
 
