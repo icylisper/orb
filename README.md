@@ -3,7 +3,7 @@ A tool to build decision trees using human-friendly rules based on the awesome [
 
 # Design
 
-1. `orb` helps define a flow or acyclic tree of decisions. These decisions are meant to be data-driven and managed by domain experts.
+1. `orb` helps define a tree of decisions. These decisions are meant to be data-driven and managed by domain experts.
 2. Each node in the decision tree is a set of rules defined using tables, functions or expressions.
 3. A table can be CSV or json that captures the constraints and rules. The values in the table could be expressions.
 4. A function is a javascript lambda that runs in an embedded V8 engine.
@@ -56,7 +56,6 @@ The above example is to showcase the different kinds of rule formats and the suc
 1. Table - a CSV or JSON file containing rules in a sparse form. Cells in the table can have expressions (see examples)
 2. Function - A python or Javascript file that can do arbitrary data transformation and filtering
 3. Expression - Inline expressions (see examples)
-4. Sexp - S-expressions that can do basic data transformations
 
 See Examples section for more concrete examples.
 
@@ -128,7 +127,7 @@ Alternatively, download a compiled native binary:
 
 | GNU/Linux x86                                                                   | MacOSX M1/M2                                                       | MacOSX x86                                                                      |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [0.1.1](https://github.com/icylisper/orb/releases/download/0.1.1/orb-x86_64-linux) | [0.1.1](https://github.com/icylisper/orb/releases/download/0.1.1/orb-mac) | [0.4.2](https://github.com/icylisper/orb/releases/download/0.1.1/orb-x86_64-apple) |
+| [0.1.1](https://github.com/icylisper/orb/releases/download/0.1.1/orb-x86_64-linux) | [0.1.1](https://github.com/icylisper/orb/releases/download/0.1.1/orb-mac) |  |
 
 ### Credits
 
